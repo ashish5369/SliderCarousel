@@ -1,0 +1,167 @@
+/* google font importing font name:-Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0d7;
+}
+.testimonial{
+display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.testimonial h1{
+    
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    color: #014985;
+}
+.testimonial h5{
+        font-weight: 300;
+        font-size: x-small;
+}
+.card-wrapper {
+
+    max-width: 1200px;
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+    /* background-color: red; */
+
+
+}
+
+.card-list .card-item {
+    list-style: none;
+}
+
+.card-list .card-item .card-link {
+    user-select: none;
+
+    display: block;
+    background: #fff;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border: 2px solid transparent;
+    text-decoration: none;
+    background-color: #dce6dc;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+
+}
+
+/* .card-list .card-item .card-link: {
+    transform: scale(2);
+} */
+
+
+/* .card-list .card-item .card-link:active {
+    border-color: #5372f0;
+} */
+
+.card-list .card-link {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    border-radius: 10px;
+    background-color: #cfdcd2;
+
+
+}
+
+.card-image {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+    width: 50%;
+    height: 130%;
+
+
+}
+
+.card-list .card-link .card-title {
+    font-weight: 500;
+    color: black;
+    margin-top:6px;
+}
+
+.card-list .card-link .card-subtitle {
+    font-weight: 300;
+    font-size: 60%;
+    color: black;
+        letter-spacing: 0.1rem;
+       
+}
+
+.card-list .card-link .card-content {
+
+    color: #4f524f;
+    margin: 0 25px;
+
+}
+
+.card-list .card-link .card-button {
+
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #014985;;
+}
+
+
+.card-wrapper .swiper-pagination-bullets {
+    height: 13px;
+    width: 13px;
+    opacity: 0.5px;
+}
+
+.card-wrapper .swiper-pagination-bullets-active {
+    opacity: 1;
+}
+
+.card-wrapper .swiper-slider-button {
+    color: #014985;
+    margin-top: -35px;
+}
+
+@media screen and (max-width:768px) {
+    .card-wrapper {
+        margin: 0 10px 25px;
+    }
+
+    .card-wrapper .swiper-slider-button {
+        display: none;
+    }
+}
+
+.card-item {
+    transition: 0.2s ease-in;
+
+}
+
+.card-item.swiper-slide-active {
+    transform: scale(1.05) !important;
+}
